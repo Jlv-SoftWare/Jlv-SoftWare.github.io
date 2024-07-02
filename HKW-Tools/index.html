@@ -1,54 +1,52 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8"/>
-		<title>HKW工具箱官网</title>
-		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
-	</head>
-	<body style="background-color: #242323">
-		<center>
-			<h1>HKW工具箱</h1>
-			<img src="favicon.ico" width="32" height="32" />
-			<button class="CilckTo_Download_Button_Gitee" onclick="handleClick()">下载&开源地址(Gitee)</button>
-			<button class="CilckTo_Download_Button_Github" onclick="handleClick()">下载&开源地址(Github)</button>
-			<style>
-				body {
-					color: aliceblue;
-				}
+<head>
+	<meta charset="UTF-8" />
+	<title>HKW工具箱官网</title>
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<style>
+		body {
+			background-color: #242323;
+			color: aliceblue;
+			text-align: center;
+		}
 
-				.CilckTo_Download_Button_Gitee {
-					background-color: #4CAF50;
-					border: none;
-					color: white;
-					padding: 10px 20px;
-					text-align: center;
-					text-decoration: none;
-					display: inline-block;
-					font-size: 16px;
-					margin: 4px 2px;
-					cursor: pointer;
-				}
+		.CilckTo_Download_Button_Gitee, .CilckTo_Download_Button_Github {
+			background-color: #4CAF50;
+			border: none;
+			color: white;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+			width: 200px; /* 控制按钮宽度 */
+		}
 
-                .CilckTo_Download_Button_Github {
-                    background-color: #4CAF50;
-                    border: none;
-                    color: white;
-                    padding: 10px 20px;
-                    text-align: center;
-                    text-decoration: none;
-                    display: inline-block;
-                    font-size: 16px;
-                    margin: 4px 2px;
-                    cursor: pointer;
-                }
-			</style>
-			<script>
-				function handleClick() {
-					window.open('https://gitee.com/j-donkey/HKW-Tools');
-				}
-			</script>
-			<p>HKW工具箱是为Huawei Kid Watch而生的工具箱,开源以供大家学习</p>
-			<p>代码写得不好,大家别喷啊_/(q-w-q)\_</p>
-		</center>
-	</body>
+		.CilckTo_Download_Button_Github {
+			margin-left: 20px; /* 按钮间距 */
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<h1>HKW工具箱</h1>
+		<img src="favicon.ico" width="32" height="32" />
+		<button class="CilckTo_Download_Button_Gitee" onclick="handleClickGitee()">下载&开源地址(Gitee)</button>
+		<button class="CilckTo_Download_Button_Github" onclick="handleClickGithub()">下载&开源地址(Github)</button>
+		<script>
+			function handleClickGitee() {
+				window.open('https://gitee.com/j-donkey/HKW-Tools');
+			}
+
+			function handleClickGithub() {
+				window.open('https://github.com/your-github-repo');
+			}
+		</script>
+		<p>HKW工具箱是为Huawei Kid Watch而生的工具箱,开源以供大家学习</p>
+		<p>代码写得不好,大家别喷啊_/(q-w-q)\_</p>
+	</center>
+</body>
 </html>
