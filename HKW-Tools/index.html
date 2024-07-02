@@ -9,13 +9,14 @@
 		<center>
 			<h1>HKW工具箱</h1>
 			<img src="favicon.ico" width="32" height="32" />
-			<button class="CilckTo_Download_Button" onclick="handleClick()">下载&开源地址(Gitee)</button>
+			<button class="CilckTo_Download_Button_Gitee" onclick="handleClick()">下载&开源地址(Gitee)</button>
+			<button class="CilckTo_Download_Button_Github" onclick="handleClick()">下载&开源地址(Github)</button>
 			<style>
 				body {
 					color: aliceblue;
 				}
 
-				.CilckTo_Download_Button {
+				.CilckTo_Download_Button_Gitee {
 					background-color: #4CAF50;
 					border: none;
 					color: white;
@@ -27,6 +28,19 @@
 					margin: 4px 2px;
 					cursor: pointer;
 				}
+
+                .CilckTo_Download_Button_Github {
+                    background-color: #4CAF50;
+                    border: none;
+                    color: white;
+                    padding: 10px 20px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                }
 			</style>
 			<script>
 				function handleClick() {
