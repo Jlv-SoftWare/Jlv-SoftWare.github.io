@@ -15,8 +15,22 @@
             color: #3498db; /* 链接颜色为蓝色 */
             text-decoration: none; /* 去除链接下划线 */
         }
+		
+		.CilckTo_Download_Release{
+			background-color: #3498db;
+			border: none;
+			color: white;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+			width: 200px; /* 控制按钮宽度 */
+		}
 
-		.CilckTo_Download_Button_Gitee, .CilckTo_Download_Button_Github {
+		.CilckTo_Gitee, .CilckTo_Github{
 			background-color: #4CAF50;
 			border: none;
 			color: white;
@@ -30,7 +44,7 @@
 			width: 200px; /* 控制按钮宽度 */
 		}
 
-		.CilckTo_Download_Button_Github {
+		.CilckTo_Github {
 			margin-left: 20px; /* 按钮间距 */
 		}
 	</style>
@@ -40,8 +54,12 @@
 		<h1>HKW工具箱</h1>
 		<img src="HKW-Tools.jpg" width="200" height="200" />
 		<br>
-		<button class="CilckTo_Download_Button_Gitee" onclick="handleClickGitee()">下载&开源地址<br>(Gitee)</button>
-		<button class="CilckTo_Download_Button_Github" onclick="handleClickGithub()">下载&开源地址<br>(Github)</button>
+		<br>
+		<button class="CilckTo_Download_Release" onclick="Download_Release()">下载最新版</button>
+		<br>
+		<br>
+		<button class="CilckTo_Gitee" onclick="handleClickGitee()">开源地址(Gitee)</button>
+		<button class="CilckTo_Github" onclick="handleClickGithub()">开源地址(Github)</button>
 		<script>
 			function handleClickGitee() {
 				window.open('https://gitee.com/j-donkey/HKW-Tools');
@@ -50,6 +68,11 @@
 			function handleClickGithub() {
 				window.open('https://github.com/Jlv-SoftWare/HKW-Tools');
 			}
+			
+			function Download_Release() {
+				window.open('https://gitee.com/j-donkey/HKW-Tools/releases/download/v1.2.0/HKW-Tools.zip')
+			}
+			
 		</script>
 		<p>HKW工具箱是为Huawei Kid Watch而生的工具箱,开源以供大家一起学习</p>
 		<p>代码写得不好,大家别喷啊_/(q-w-q)\_</p>
